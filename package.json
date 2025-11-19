@@ -4,7 +4,7 @@
   "main": "dist/server.js",
   "type": "module",
   "scripts": {
-    "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.js",
+    "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
