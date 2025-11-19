@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import sequelize from '../config/database.ts';
+import sequelize from '../config/database.js';
 
 interface TreinoExercicioAttributes {
   id: number;

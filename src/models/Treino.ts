@@ -1,5 +1,5 @@
 import { Model, DataTypes, type Optional } from 'sequelize';
-import sequelize from '../config/database.ts';
+import sequelize from '../config/database.js';
 
 interface TreinoAttributes {
   id: number;

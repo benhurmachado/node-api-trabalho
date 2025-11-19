@@ -3,21 +3,27 @@
   "_version": "24.0.0",
 
   "compilerOptions": {
-    "lib": [
-      "es2024",
-      "ESNext.Array",
-      "ESNext.Collection",
-      "ESNext.Iterator",
-      "ESNext.Promise"
-    ],
+    // Target & Module
+    "lib": ["es2024"],
     "module": "nodenext",
     "target": "es2024",
+    "moduleResolution": "nodenext",
 
+    // Output
+    "outDir": "./dist",
+    "rootDir": "./src",
+    
+    // Type Checking
     "strict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
-    "moduleResolution": "node16",
-    "allowImportingTsExtensions": true,
-    "noEmit": true
-  }
+    
+    // Interop
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }

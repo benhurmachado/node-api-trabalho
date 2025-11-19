@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { registro, login, perfil } from '../controllers/authController.ts';
-import { registroValidator, loginValidator } from '../validators/authValidator.ts';
-import { validationMiddleware } from '../middlewares/validationMiddleware.ts';
-import { authMiddleware } from '../middlewares/authMiddleware.ts';
+import { registro, login, perfil } from '../controllers/authController.js';
+import { registroValidator, loginValidator } from '../validators/authValidator.js';
+import { validationMiddleware } from '../middlewares/validationMiddleware.js';
+import { authMiddleware } from '../middlewares/authMiddleware.js';
 
 const router = Router();
 

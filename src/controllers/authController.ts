@@ -1,7 +1,7 @@
 import { type Request, type Response } from 'express';
 import jwt from 'jsonwebtoken';
-import { Usuario, Instrutor, Aluno } from '../models/index.ts';
-import { AppError } from '../utils/errors.ts';
+import { Usuario, Instrutor, Aluno } from '../models/index.js';
+import { AppError } from '../utils/errors.js';
 
 export const registro = async (req: Request, res: Response): Promise<void> => {
   try {

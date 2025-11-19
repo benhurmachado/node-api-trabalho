@@ -1,6 +1,6 @@
 import { describe, expect, test, beforeAll } from '@jest/globals';
-import Usuario from '../../models/Usuario.ts';
-import sequelize from '../../config/database.ts';
+import Usuario from '../../models/Usuario.js';
+import sequelize from '../../config/database.js';
 
 beforeAll(async () => {
   await sequelize.sync({ force: true });

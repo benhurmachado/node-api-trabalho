@@ -5,10 +5,10 @@ import {
   criarAluno,
   atualizarAluno,
   deletarAluno,
-} from '../controllers/alunoController.ts';
-import { criarAlunoValidator, atualizarAlunoValidator } from '../validators/alunoValidator.ts';
-import { validationMiddleware } from '../middlewares/validationMiddleware.ts';
-import { authMiddleware, isAluno } from '../middlewares/authMiddleware.ts';
+} from '../controllers/alunoController.js';
+import { criarAlunoValidator, atualizarAlunoValidator } from '../validators/alunoValidator.js';
+import { validationMiddleware } from '../middlewares/validationMiddleware.js';
+import { authMiddleware, isAluno } from '../middlewares/authMiddleware.js';
 
 const router = Router();
 

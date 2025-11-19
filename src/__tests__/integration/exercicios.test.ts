@@ -1,8 +1,8 @@
 import { describe, expect, test, beforeAll, afterAll } from '@jest/globals';
 import request from 'supertest';
-import app from '../../app.ts';
-import sequelize from '../../config/database.ts';
-import { Usuario, Instrutor } from '../../models/index.ts';
+import app from '../../app.js';
+import sequelize from '../../config/database.js';
+import { Usuario, Instrutor } from '../../models/index.js';
 
 let tokenInstrutor: string;
 let tokenAluno: string;

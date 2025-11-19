@@ -1,6 +1,6 @@
-// src/models/Usuario.ts
+// src/models/Usuario.js
 import { Model, DataTypes, type Optional } from 'sequelize';
-import sequelize from '../config/database.ts';
+import sequelize from '../config/database.js';
 import bcrypt from 'bcrypt';
 
 interface UsuarioAttributes {

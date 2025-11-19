@@ -5,10 +5,10 @@ import {
   criarInstrutor,
   atualizarInstrutor,
   deletarInstrutor,
-} from '../controllers/instrutorController.ts';
-import { criarInstrutorValidator, atualizarInstrutorValidator } from '../validators/instrutorValidator.ts';
-import { validationMiddleware } from '../middlewares/validationMiddleware.ts';
-import { authMiddleware, isInstrutor } from '../middlewares/authMiddleware.ts';
+} from '../controllers/instrutorController.js';
+import { criarInstrutorValidator, atualizarInstrutorValidator } from '../validators/instrutorValidator.js';
+import { validationMiddleware } from '../middlewares/validationMiddleware.js';
+import { authMiddleware, isInstrutor } from '../middlewares/authMiddleware.js';
 
 const router = Router();
 

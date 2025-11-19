@@ -1,10 +1,10 @@
-import Usuario from './Usuario.ts';
-import Instrutor from './Instrutor.ts';
-import Aluno from './Aluno.ts';
-import Exercicio from './Exercicio.ts';
-import Treino from './Treino.ts';
-import TreinoExercicio from './TreinoExercicio.ts';
-import HistoricoTreino from './HistoricoTreino.ts';
+import Usuario from './Usuario.js';
+import Instrutor from './Instrutor.js';
+import Aluno from './Aluno.js';
+import Exercicio from './Exercicio.js';
+import Treino from './Treino.js';
+import TreinoExercicio from './TreinoExercicio.js';
+import HistoricoTreino from './HistoricoTreino.js';
 
 // Relacionamentos Usuario
 Usuario.hasOne(Instrutor, {

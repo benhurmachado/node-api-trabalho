@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import authRoutes from './authRoutes.ts';
-import exercicioRoutes from './exercicioRoutes.ts';
-import treinoRoutes from './treinoRoutes.ts';
-import instrutorRoutes from './instrutorRoutes.ts'
-import alunoRoutes from './alunoRoutes.ts'
-import historicoRoutes from './historicoRoutes.ts'
+import authRoutes from './authRoutes.js';
+import exercicioRoutes from './exercicioRoutes.js';
+import treinoRoutes from './treinoRoutes.js';
+import instrutorRoutes from './instrutorRoutes.js'
+import alunoRoutes from './alunoRoutes.js'
+import historicoRoutes from './historicoRoutes.js'
 
 const router = Router();
 

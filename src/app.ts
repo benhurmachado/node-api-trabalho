@@ -1,13 +1,13 @@
-// src/app.ts
+// src/app.js
 import express, { type Application, type Request, type Response } from 'express';
 import cors from 'cors';
 import swaggerUi from 'swagger-ui-express';
-import { swaggerSpec } from './config/swagger.ts';
-import routes from './routes/index.ts';
-import { requestIdMiddleware } from './middlewares/requestIdMiddleware.ts';
-import { loggingMiddleware } from './middlewares/loggingMiddleware.ts';
-import { errorMiddleware } from './middlewares/errorMiddleware.ts';
-import './models/index.ts';
+import { swaggerSpec } from './config/swagger.js';
+import routes from './routes/index.js';
+import { requestIdMiddleware } from './middlewares/requestIdMiddleware.js';
+import { loggingMiddleware } from './middlewares/loggingMiddleware.js';
+import { errorMiddleware } from './middlewares/errorMiddleware.js';
+import './models/index.js';
 
 const app: Application = express();
 

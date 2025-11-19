@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { listarHistorico, registrarTreino, atualizarHistorico } from '../controllers/historicoController.ts';
-import { authMiddleware, isAluno } from '../middlewares/authMiddleware.ts';
+import { listarHistorico, registrarTreino, atualizarHistorico } from '../controllers/historicoController.js';
+import { authMiddleware, isAluno } from '../middlewares/authMiddleware.js';
 
 const router = Router();
 

@@ -1,6 +1,6 @@
 import { type Request, type Response } from 'express';
-import { Instrutor, Usuario, Treino } from '../models/index.ts';
-import { AppError, NotFoundError } from '../utils/errors.ts';
+import { Instrutor, Usuario, Treino } from '../models/index.js';
+import { AppError, NotFoundError } from '../utils/errors.js';
 
 export const listarInstrutores = async (req: Request, res: Response): Promise<void> => {
   try {

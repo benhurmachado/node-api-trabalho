@@ -5,10 +5,10 @@ import {
   criarExercicio,
   atualizarExercicio,
   deletarExercicio,
-} from '../controllers/exercicioController.ts';
-import { criarExercicioValidator, atualizarExercicioValidator } from '../validators/exercicioValidator.ts';
-import { validationMiddleware } from '../middlewares/validationMiddleware.ts';
-import { authMiddleware, isInstrutor } from '../middlewares/authMiddleware.ts';
+} from '../controllers/exercicioController.js';
+import { criarExercicioValidator, atualizarExercicioValidator } from '../validators/exercicioValidator.js';
+import { validationMiddleware } from '../middlewares/validationMiddleware.js';
+import { authMiddleware, isInstrutor } from '../middlewares/authMiddleware.js';
 
 const router = Router();
 
