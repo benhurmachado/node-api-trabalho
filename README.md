@@ -1,10 +1,10 @@
-# 🏋️ API Plataforma de Exercícios Físicos
+# API Plataforma de Exercícios Físicos
 
 API RESTful completa para gerenciamento de treinos e exercícios físicos, desenvolvida com Node.js, Express, TypeScript e PostgreSQL.
 
 **Link do Deploy**: https://node-api-trabalho.onrender.com
 
-## 📋 Sumário
+## Sumário
 
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -80,7 +80,7 @@ Esta API foi desenvolvida como trabalho avaliativo da disciplina de Tópicos Esp
 - [x] Definição de séries, repetições e descanso
 - [x] Níveis de dificuldade
 
-## 📊 Entidades e Relacionamentos
+## Entidades e Relacionamentos
 
 ### Diagrama ER
 
@@ -118,20 +118,20 @@ Aluno (N) --- (M) Treino  [através de HistoricoTreino]
 7. **HistoricoTreino** (tabela de junção)
    - id, alunoId, treinoId, dataRealizacao, duracaoRealMinutos, calorias, observacoes, avaliacaoTreino, concluido
 
-## 📦 Pré-requisitos
+## Pré-requisitos
 
 - Node.js >= 18.x
 - npm ou yarn
 - Conta no NeonDB (ou outro provedor PostgreSQL)
 - Git
 
-## 🔧 Instalação
+## Instalação
 
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/plataforma-exercicios-api.git
-cd plataforma-exercicios-api
+git clone https://github.com/benhurmachado/node-api-trabalho.git
+cd node-api-trabalho
 ```
 
 ### 2. Instale as dependências
@@ -140,7 +140,7 @@ cd plataforma-exercicios-api
 npm install
 ```
 
-## ⚙️ Configuração
+## Configuração
 
 ### 1. Configurar Banco de Dados
 
@@ -167,7 +167,7 @@ JWT_EXPIRES_IN=7d
 CORS_ORIGIN=*
 ```
 
-⚠️ **Importante**: Nunca commite o arquivo `.env` para o repositório!
+**Importante**: Nunca commite o arquivo `.env` para o repositório!
 
 ### 3. Adicionar ao .gitignore
 
@@ -181,7 +181,7 @@ dist/
 .env.*.local
 ```
 
-## 🏃 Como Rodar Localmente
+## Como Rodar Localmente
 
 ### Modo Desenvolvimento (com hot reload)
 
@@ -205,7 +205,7 @@ O servidor estará rodando em `http://localhost:3000`
 
 Acesse: `http://localhost:3000/api-docs`
 
-## 🧪 Testes
+## Testes
 
 ### Rodar todos os testes
 
@@ -225,7 +225,7 @@ npm run test:watch
 npm test -- --coverage
 ```
 
-## 📚 Documentação da API
+## Documentação da API
 
 ### Swagger UI
 
@@ -306,7 +306,7 @@ curl -X POST http://localhost:3000/api/exercicios \
   }'
 ```
 
-## ☁️ Deploy
+## Deploy
 
 ### Deploy no Render
 
@@ -328,7 +328,7 @@ curl -X POST http://localhost:3000/api/exercicios \
 
 **Link do Deploy**: https://node-api-trabalho.onrender.com
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 plataforma-exercicios-api/
@@ -381,7 +381,7 @@ plataforma-exercicios-api/
 └── README.md
 ```
 
-## 📜 Scripts Disponíveis
+## Scripts Disponíveis
 
 ```bash
 npm run dev         # Inicia em modo desenvolvimento com hot reload

@@ -41,7 +41,7 @@ beforeAll(async () => {
     });
   
   tokenAluno = resAluno.body.token;
-});
+}, 30000);
 
 afterAll(async () => {
   await sequelize.close();

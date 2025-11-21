@@ -6,7 +6,7 @@ import { Usuario } from '../../models/index.js';
 
 beforeAll(async () => {
   await sequelize.sync({ force: true });
-});
+}, 30000);
 
 afterAll(async () => {
   await sequelize.close();
@@ -76,7 +76,7 @@ describe('Testes de Integração - Autenticação', () => {
         senha: 'senha123',
         tipo: 'aluno',
       });
-    });
+    }, 30000);
 
     test('Deve fazer login com credenciais corretas', async () => {
       const response = await request(app)
@@ -130,7 +130,7 @@ describe('Testes de Integração - Autenticação', () => {
         });
 
       token = response.body.token;
-    });
+    }, 30000);
 
     test('Deve retornar perfil com token válido', async () => {
       const response = await request(app)

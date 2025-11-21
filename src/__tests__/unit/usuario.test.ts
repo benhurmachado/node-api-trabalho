@@ -4,7 +4,7 @@ import sequelize from '../../config/database.js';
 
 beforeAll(async () => {
   await sequelize.sync({ force: true });
-});
+}, 30000);
 
 describe('Testes Unitários - Usuario Model', () => {
   test('Deve criar um usuário com senha criptografada', async () => {
