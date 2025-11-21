@@ -19,7 +19,7 @@ const options: swaggerJsdoc.Options = {
       },
       {
         // lembrar de add url do render aq
-        url: 'https://sua-api.render.com',
+        url: 'https://node-api-trabalho.onrender.com',
         description: 'Servidor de Produção',
       },
     ],
